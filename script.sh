@@ -1,3 +1,3 @@
-cat gitlab.rb > /etc/gitlab/gitlab.rb
+#!/bin/bash
 service ssh restart
 (/opt/gitlab/embedded/bin/runsvdir-start &) && gitlab-ctl reconfigure && tail -f /dev/null

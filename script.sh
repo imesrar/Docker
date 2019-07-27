@@ -1,3 +1,3 @@
 #!/bin/bash
 service ssh restart
-(/opt/gitlab/embedded/bin/runsvdir-start &) && gitlab-ctl reconfigure && tail -f /dev/null
+(/opt/gitlab/embedded/bin/runsvdir-start &) &&  gitlab-ctl reconfigure && gitlab-ctl start && tail -f /dev/null
